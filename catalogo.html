@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Catálogo</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Productos</h1>
+
+<div>
+    <p>Laptop Gamer - $15,000</p>
+    <button onclick="agregar('Laptop Gamer',15000)">
+        Agregar
+    </button>
+</div>
+
+<div>
+    <p>Mouse RGB - $500</p>
+    <button onclick="agregar('Mouse RGB',500)">
+        Agregar
+    </button>
+</div>
+
+<div>
+    <p>Teclado Mecánico - $1200</p>
+    <button onclick="agregar('Teclado Mecánico',1200)">
+        Agregar
+    </button>
+</div>
+
+<button onclick="generarTicket()">
+    Generar Ticket
+</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/catalogo.js"></script>
+
+</body>
+</html>

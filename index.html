@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tienda Demo</h1>
+
+    <input type="email" id="correo" placeholder="Correo">
+
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="login()">
+        Iniciar Sesión
+    </button>
+
+    <p>
+        ¿No tienes cuenta?
+        <a href="registro.html">Crear cuenta</a>
+    </p>
+</div>
+
+<script src="js/auth.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+}
+</script>
+</body>
+</html>
