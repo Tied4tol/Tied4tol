@@ -6,25 +6,33 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
-<div class="container">
     <h1>Crear Cuenta</h1>
 
-    <input type="text" id="nombre"
-        placeholder="Nombre">
+    <!-- CORRECCIÓN: faltaba este <div> de apertura -->
+    <div>
 
-    <input type="email" id="correo"
-        placeholder="Correo">
+        <input type="text"
+               id="nombre"
+               placeholder="Nombre completo">
 
-    <input type="password" id="password"
-        placeholder="Contraseña">
+        <input type="date"
+               id="fechaNacimiento">
 
-    <button onclick="registrar()">
-        Registrarse
-    </button>
-</div>
+        <input type="email"
+               id="correo"
+               placeholder="Correo">
 
-<script src="js/auth.js"></script>
+        <input type="password"
+               id="password"
+               placeholder="Contraseña">
+
+        <button onclick="registrar()">
+            Registrarse
+        </button>
+
+    </div>
+
+    <script src="js/auth.js"></script>
 
 </body>
 </html>
